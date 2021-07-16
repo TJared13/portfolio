@@ -41,63 +41,54 @@ export default function DefaultNavbar() {
                     <Nav>
                         <div className="flex flex-grow z-50 flex-row items-center content-between">
                             <NavLink
-                                href=""
+                                href="/resume"
                                 rel="noreferrer"
                                 ripple="light"
                                 className="hover:border-grey-700"
                             >
-                                {/* <Icon name="description" size="2xl" /> */}
-                                &nbsp;Resume
+                                Resume
                             </NavLink>
                             <NavLink
                                 href="#"
                                 rel="noreferrer"
                                 ripple="light"
                             >
-                                {/* <Icon family="font-awesome" name="fas fa-building" size="2xl" /> */}
-                                &nbsp; Experience
+                                Education
                             </NavLink>
-                            <div className="text-white">
-                                <Dropdown
-                                    color="transparent"
-                                    size="sm"
-                                    buttonType="link"
-                                    buttonText={
-                                        <div className="py-2.5 text-md flex items-center">
-                                            {/* <Icon
-                                                name="view_carousel"
-                                                size="2xl"
-                                                color="white"
-                                            /> */}
-                                            <span className="ml-2 text-xs uppercase font-medium leading text-white">
-                                                Projects
-                                            </span>
-                                        </div>
-                                    }
-                                    ripple="light"
-                                >
-                                    <Link to="/">
-                                        <DropdownItem color="blueGray">
-                                            Javascript
-                                        </DropdownItem>
-                                    </Link>
-                                    <Link to="/">
-                                        <DropdownItem color="blueGray">
-                                            Asp.Net
-                                        </DropdownItem>
-                                    </Link>
-                                    <Link to="/">
-                                        <DropdownItem color="blueGray">
-                                            Python
-                                        </DropdownItem>
-                                    </Link>
-                                    <Link to="/">
-                                        <DropdownItem color="blueGray">
-                                            Business Administration
-                                        </DropdownItem>
-                                    </Link>
-                                </Dropdown>
-                            </div>
+                            <Dropdown
+                                color="transparent"
+                                size="sm"
+                                buttonType="link"
+                                buttonText={
+                                    <div className="text-md flex items-center">
+                                        <span className="text-sm font-light leading text-white">
+                                            Projects
+                                        </span>
+                                    </div>
+                                }
+                                ripple="light"
+                            >
+                                <Link to="/">
+                                    <DropdownItem color="blueGray">
+                                        Javascript
+                                    </DropdownItem>
+                                </Link>
+                                <Link to="/">
+                                    <DropdownItem color="blueGray">
+                                        Asp.Net
+                                    </DropdownItem>
+                                </Link>
+                                <Link to="/">
+                                    <DropdownItem color="blueGray">
+                                        Python
+                                    </DropdownItem>
+                                </Link>
+                                <Link to="/">
+                                    <DropdownItem color="blueGray">
+                                        Business Administration
+                                    </DropdownItem>
+                                </Link>
+                            </Dropdown>
                             <NavLink
                                 onClick={(e) => setShowModal(true)}
                                 rel="noreferrer"

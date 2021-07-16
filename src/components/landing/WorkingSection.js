@@ -6,7 +6,8 @@ import H4 from '@material-tailwind/react/Heading4';
 import H6 from '@material-tailwind/react/Heading6';
 import LeadText from '@material-tailwind/react/LeadText';
 import Paragraph from '@material-tailwind/react/Paragraph';
-import StatusCard from 'components/landing/StatusCard';
+// import StatusCard from 'components/landing/StatusCard';
+import StatusLinkCard from './StatusLinkCard';
 import Teamwork from 'assets/img/teamwork.jpeg';
 
 export default function WorkingSection() {
@@ -14,31 +15,35 @@ export default function WorkingSection() {
         <section className="pb-20 bg-gray-100 -mt-32">
             <div className="container max-w-7xl mx-auto px-4">
                 <div className="flex flex-wrap justify-around relative z-50">
-                        <StatusCard 
+                        <StatusLinkCard 
                             color="blueGray" 
-                            icon="stars" 
-                            title="Awarded Agency"
+                            icon="account_balance" 
+                            title='Experience'
+                            link="/resume"
                         >
-                            Divide details about your product or agency work into
-                            parts. A paragraph describing a feature will be enough.
-                        </StatusCard>
-                        <StatusCard
-                            color="lightBlue"
-                            icon="autorenew"
-                            title="Free Revisions"
+                            Graduating <span className="font-medium">April of 2022 </span> 
+                            from the Information Systems Program in the Marriott School of
+                            Business at Brigham Young University.
+                        </StatusLinkCard>
+                        <StatusLinkCard
+                            color="gray"
+                            icon="work"
+                            title="Experience"
+                            link="/education"
                         >
-                            Keep you user engaged by providing meaningful
-                            information. Remember that by this time, the user is
-                            curious.
-                        </StatusCard>
-                        <StatusCard
+                            Working as a <a href="/resume" className="font-medium">IT Project Management Intern </a>
+                            at Avolta, Inc. Resposibilities included sytems administration and management 
+                            of a SSO Platform integration.
+                        </StatusLinkCard>
+                        <StatusLinkCard
                             color="teal"
                             icon="fingerprint"
-                            title="Verified Company"
+                            title="Projects"
+                            link="/projects"
                         >
-                            Write a few lines about each one. A paragraph describing
-                            a feature will be enough. Keep you user engaged!
-                        </StatusCard>
+                            Worked on projects using ASP.Net, Python, Javascript and General HTML/CSS. 
+                            Building experience with SwuitUI and ReactJS.
+                        </StatusLinkCard>
                     
                     
                 </div>

@@ -14,7 +14,7 @@ export default function Landing() {
             <main>
                 <Header />
                 <WorkingSection />
-                <TeamSection titleColor="lime" />
+                <TeamSection/>
                 <ContactSection />
             </main>
             <DefaultFooter />

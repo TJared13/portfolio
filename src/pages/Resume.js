@@ -1,7 +1,7 @@
 import DefaultNavbar from 'components/DefaultNavbar';
 import DefaultFooter from 'components/DefaultFooter';
 import Header from 'components/Resume/Header';
-import Content from 'components/profile/Content';
+import Content from 'components/Resume/Content';
 
 export default function Resume() {
     return (

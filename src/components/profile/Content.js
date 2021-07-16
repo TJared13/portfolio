@@ -29,80 +29,56 @@ export default function Content() {
                                 </div>
                             </div>
                             <div className="flex px-4 justify-between lg:order-3 lg:self-center mt-10 lg:justify-around lg:mt-0 lg:w-4/12">
-                                <NavLink
-                                href="https://www.linkedin.com/in/dallin-jared/"
-                                target="_blank"
-                                rel="noreferrer"
-                                >
-                                    <Icon
-                                        family="font-awesome"
-                                        name="fab fa-linkedin"
-                                        size="3xl"
-                                        color="blueGray"
-                                    />
-                                </NavLink>
-                                <NavLink
-                                href="https://www.instagram.com/dallin.jared/"
-                                target="_blank"
-                                >
-                                    <Icon
-                                        family="font-awesome"
-                                        name="fab fa-instagram"
-                                        size="4xl"
-                                        color="blueGray"
-                                    />
-                                </NavLink>
-                                <NavLink
-                                href="https://github.com/dallinjared"
-                                target="_blank"
-                                rel="noreferrer"
-                                ripple="light"
-                                >
-                                    <Icon
-                                        family="font-awesome"
-                                        name="fab fa-github"
-                                        size="4xl"
-                                        color="blueGray"
-                                    />
-                                </NavLink>
+                                {/* <div className="flex gap-2 mt-6 lg:mb-0 mb-8 justify-around"> */}
+                                    <a
+                                        href="https://github.com/creativetimofficial"
+                                        className="grid place-items-center bg-white text-gray-900 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Icon
+                                            family="font-awesome"
+                                            name="fab fa-github"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://www.facebook.com/dallinmjared"
+                                        className="grid place-items-center bg-white text-gray-900 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Icon
+                                            family="font-awesome"
+                                            name="fab fa-facebook-square"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://www.instagram.com/creativetimofficial/"
+                                        className="grid place-items-center bg-white text-gray-900 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Icon
+                                            family="font-awesome"
+                                            name="fab fa-instagram"
+                                        />
+                                    </a>
+                                {/* </div> */}
                             </div>
                             <div className="w-full lg:w-4/12 px-4 lg:order-1">
-                                <div className="flex justify-center py-4 lg:pt-4 pt-8">
-                                    <div className="mr-4 p-3 text-center">
-                                        <span className="text-xl font-bold block uppercase tracking-wide text-gray-900">
-                                            22
-                                        </span>
-                                        <span className="text-sm text-gray-700">
-                                            Friends
-                                        </span>
-                                    </div>
-                                    <div className="mr-4 p-3 text-center">
-                                        <span className="text-xl font-bold block uppercase tracking-wide text-gray-900">
-                                            10
-                                        </span>
-                                        <span className="text-sm text-gray-700">
-                                            Photos
-                                        </span>
-                                    </div>
-                                    <div className="lg:mr-4 p-3 text-center">
-                                        <span className="text-xl font-bold block uppercase tracking-wide text-gray-900">
-                                            89
-                                        </span>
-                                        <span className="text-sm text-gray-700">
-                                            Comments
-                                        </span>
+                                <div className="text-center my-8">
+                                    <H3 color="gray">Dallin Jared</H3>
+                                    <div className="mt-0 mb-2 text-gray-700 font-medium flex items-center justify-center gap-2">
+                                        <Icon name="place" size="xl" />
+                                        Provo, Utah
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="text-center my-8">
-                            <H3 color="gray">Dallin Jared</H3>
-                            <div className="mt-0 mb-2 text-gray-700 font-medium flex items-center justify-center gap-2">
-                                <Icon name="place" size="xl" />
-                                Provo, Utah
-                            </div>
-                            <div className="mb-2 text-gray-700 mt-10 flex items-center justify-center gap-2">
+
+                        <div className="text-center mb-8">
+                            <div className="mb-2 text-gray-700 flex items-center justify-center gap-2">
                                 <Icon name="work" size="xl" />
                                 IT Project Management Intern - Avolta
                             </div>
