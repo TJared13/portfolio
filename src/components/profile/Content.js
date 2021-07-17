@@ -4,8 +4,6 @@ import H3 from '@material-tailwind/react/Heading3';
 import Icon from '@material-tailwind/react/Icon';
 import LeadText from '@material-tailwind/react/LeadText';
 import ProfilePicture from 'assets/img/IMG_5988.jpeg';
-import NavLink from '@material-tailwind/react/NavLink';
-
 
 export default function Content() {
     return (
@@ -31,7 +29,7 @@ export default function Content() {
                             <div className="flex px-4 justify-between lg:order-3 lg:self-center mt-10 lg:justify-around lg:mt-0 lg:w-4/12">
                                 {/* <div className="flex gap-2 mt-6 lg:mb-0 mb-8 justify-around"> */}
                                     <a
-                                        href="https://github.com/creativetimofficial"
+                                        href="https://github.com/dallinjared"
                                         className="grid place-items-center bg-white text-gray-900 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -53,7 +51,7 @@ export default function Content() {
                                         />
                                     </a>
                                     <a
-                                        href="https://www.instagram.com/creativetimofficial/"
+                                        href="https://www.instagram.com/dallin.jared/"
                                         className="grid place-items-center bg-white text-gray-900 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
                                         target="_blank"
                                         rel="noopener noreferrer"

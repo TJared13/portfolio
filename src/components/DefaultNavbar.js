@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Modal from "@material-tailwind/react/Modal";
-import ModalHeader from "@material-tailwind/react/ModalHeader";
-import ModalBody from "@material-tailwind/react/ModalBody";
-import ModalFooter from "@material-tailwind/react/ModalFooter";
 import Navbar from '@material-tailwind/react/Navbar';
 import NavbarContainer from '@material-tailwind/react/NavbarContainer';
 import NavbarWrapper from '@material-tailwind/react/NavbarWrapper';
@@ -15,11 +11,9 @@ import NavLink from '@material-tailwind/react/NavLink';
 import Dropdown from '@material-tailwind/react/Dropdown';
 import DropdownItem from '@material-tailwind/react/DropdownItem';
 // import Icon from '@material-tailwind/react/Icon';
-import Button from '@material-tailwind/react/Button';
 
 export default function DefaultNavbar() {
     const [openNavbar, setOpenNavbar] = useState(false);
-    const [showModal, setShowModal] = React.useState(false);
 
     return (
         <Navbar color="black" navbar>
@@ -39,14 +33,14 @@ export default function DefaultNavbar() {
 
                 <NavbarCollapse open={openNavbar}>
                     <Nav>
-                        <div className="flex flex-grow z-50 flex-row items-center content-between">
+                        <div className="flex flex-wrap z-50 flex-row items-center content-between bg-blue-gray">
                             <NavLink
-                                href="/resume"
+                                href="/experience"
                                 rel="noreferrer"
                                 ripple="light"
                                 className="hover:border-grey-700"
                             >
-                                Resume
+                                Experience
                             </NavLink>
                             <NavLink
                                 href="#"
@@ -89,46 +83,6 @@ export default function DefaultNavbar() {
                                     </DropdownItem>
                                 </Link>
                             </Dropdown>
-                            <NavLink
-                                onClick={(e) => setShowModal(true)}
-                                rel="noreferrer"
-                                ripple="light"
-                            >
-                                {/* <Icon
-                                    family="font-awesome"
-                                    name="fab fa-github"
-                                    size="xl"
-                                /> */}
-                                &nbsp;Github
-                            </NavLink>
-                            <Modal size="sm" active={showModal} toggler={() => setShowModal(false)}>
-                                <ModalHeader toggler={() => setShowModal(false)}>
-                                    GitHub Link
-                                </ModalHeader>
-                                <ModalBody>
-                                    <p className="text-base leading-relaxed text-gray-600 font-normal">
-                                        Just double checking you want to leave the site and go to my stellar GitHub Page!
-                                    </p>
-                                </ModalBody>
-                                <ModalFooter>
-                                    <Button 
-                                        color="red"
-                                        buttonType="link"
-                                        onClick={(e) => setShowModal(false)}
-                                        ripple="dark"
-                                    >
-                                        Close
-                                    </Button>
-
-                                    <Button
-                                        color="green"
-                                        href="https://www.github.com"
-                                        ripple="light"
-                                    >
-                                        Let's Do This!
-                                    </Button>
-                                </ModalFooter>
-                            </Modal>
                             <NavLink
                                 href="/profile"
                                 rel="noreferrer"

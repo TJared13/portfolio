@@ -7,7 +7,7 @@ export default function Header() {
     //  </section>
         <div className="relative flex h-[300px] content-center items-center justify-center">
             <div className="bg-forestTrees-background bg-cover bg-center absolute top-0 w-full h-full" />
-            <div className="container max-w-8xl relative mx-auto">
+            <div className="container max-w-8xl relative mx-auto mt-10 md:mt-0">
                 <div className="items-center flex flex-wrap">
                     <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                         <H2 color="white" weight="light">Experience</H2>

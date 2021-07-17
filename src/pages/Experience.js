@@ -1,9 +1,9 @@
 import DefaultNavbar from 'components/DefaultNavbar';
 import DefaultFooter from 'components/DefaultFooter';
-import Header from 'components/Resume/Header';
-import Content from 'components/Resume/Content';
+import Header from 'components/experience/Header';
+import Content from 'components/experience/Content';
 
-export default function Resume() {
+export default function Experience() {
     return (
         <>
             <div className="absolute w-full z-20">

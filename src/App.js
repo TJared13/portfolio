@@ -3,7 +3,7 @@ import Landing from 'pages/Landing';
 import Profile from 'pages/Profile';
 import Login from 'pages/Login';
 import Register from 'pages/Register';
-import Resume from 'pages/Resume';
+import Experience from 'pages/Experience';
 
 // Font Awesome Style Sheet
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -18,7 +18,7 @@ function App() {
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
-            <Route exact path="/resume" component={Resume}/>
+            <Route exact path="/experience" component={Experience}/>
             <Redirect from="*" to="/" />
         </Switch>
     );
